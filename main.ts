@@ -240,7 +240,6 @@ control.inBackground(function invaderLoop() {
 })
 
 // SIMON
-
 control.inBackground(function invaderLoop() {
     simon = [];
     while (true) {
@@ -305,8 +304,8 @@ function simonInput(button: number) {
         simonReady = false;
         basic.pause(500)
         basic.clearScreen()
-        simonReady = true;
         guessed++
+        simonReady = true;
     } else { soundDamage(); gameOver() }
 }
 
